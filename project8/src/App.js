@@ -8,13 +8,14 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 
 import NoPage from './pages/NoPage';
+import Wrapper from './components/Wrapper';
 
 export default function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Navbar />}>
+          <Route path='/' element={<Wrapper />}>
             <Route index element={<Home />} />
             <Route path="Contact" element={<Contact />} />
             <Route path="About" element={<About />} />
